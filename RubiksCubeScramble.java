@@ -294,7 +294,7 @@ public class RubiksCubeScramble {
 	public static void randomMoves(byte[] cubestate, int n) {
 		Random r = new Random();
 		for(int i = 0; i < n; ++i) {
-			rotateFace(cubestate, r.nextInt(6), r.nextInt(4));
+			rotateFace(cubestate, r.nextInt(6), r.nextInt(3) + 1);
 		}
 	}
 }
